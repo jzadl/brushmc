@@ -42,13 +42,8 @@ jobs:
         run: npm ci
 
       - name: Build Tauri app
-        uses: tauri-apps/tauri-action@v2
+        uses: tauri-apps/tauri-action@v0
         with:
           args: --no-bundle
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: brush-${{ runner.os }}
-          path: src-tauri/target/release/brush-mc${{ runner.os == 'Windows' && '.exe' || '' }}
-          if-no-files-found: error
+          uploadPlainBinary: true
+          uploadWorkflowArtifacts: true
