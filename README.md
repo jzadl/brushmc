@@ -35,4 +35,4 @@ The binary will be at `src-tauri/target/release/brush-mc.exe` on Windows, `brush
 ## Supported platforms
 
 * Windows, primary target
-* macOS and Linux, the Rust backend uses conditional compilation for OS specific paths and commands
+* macOS and Linux, the Rust backend uses conditional compilation for OS specific paths and commands, i dont really know if it works
