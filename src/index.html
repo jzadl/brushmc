@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brush</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <aside>
+    <nav>
+      <h1>Brush</h1>
+      <ul>
+        <li><a href="#" class="active" data-tab="overview">Overview</a></li>
+        <li><a href="#" data-tab="mods">Mods</a></li>
+        <li><a href="#" data-tab="resourcepacks">Packs</a></li>
+        <li><a href="#" data-tab="shaders">Shaders</a></li>
+        <li><a href="#" data-tab="versions">Versions</a></li>
+        <li><a href="#" data-tab="profiles">Profiles</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-foot">
+      <button class="btn btn-imp-bp" data-action="import-brushpack">+ Import Brushpack</button>
+    </div>
+  </aside>
+  <main>
+    <div id="content"></div>
+  </main>
+  <script type="module" src="/main.ts"></script>
+</body>
+</html>
